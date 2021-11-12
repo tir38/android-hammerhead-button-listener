@@ -6,7 +6,7 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import io.jasonatwood.android.hammerhead.HammerheadButtonListener
 import io.jasonatwood.android.hammerhead.HammerheadButtonListener.Button.*
-import io.jasonatwood.android.hammerhead.getHammerheadDeviceType
+import io.jasonatwood.android.hammerhead.hammerheadDeviceType
 
 class MainActivity : AppCompatActivity() {
 
@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         outputTextview = findViewById(R.id.output_text_view)
         modelTextview = findViewById<TextView>(R.id.model_text_view).also {
-            it.text = getHammerheadDeviceType().toString()
+            it.text = hammerheadDeviceType().toString()
         }
         hammerheadButtonListener = HammerheadButtonListener()
     }
