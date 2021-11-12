@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
         val button = hammerheadButtonListener.onKeyLongPress(event)
         when (button) {
             PREVIOUS -> TODO()
-            NEXT -> if (get
+            NEXT -> TODO()
             BACK -> TODO()
             CONFIRM -> TODO()
             null -> TODO()
