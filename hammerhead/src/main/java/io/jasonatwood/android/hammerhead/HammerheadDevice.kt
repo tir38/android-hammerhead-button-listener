@@ -8,7 +8,7 @@ enum class HammerheadDeviceType {
     UNKNOWN
 }
 
-fun getHammerheadDeviceType(): HammerheadDeviceType {
+fun hammerheadDeviceType(): HammerheadDeviceType {
     return when (Build.DEVICE) {
         "hx" -> HammerheadDeviceType.K1
         "k2" -> HammerheadDeviceType.K2

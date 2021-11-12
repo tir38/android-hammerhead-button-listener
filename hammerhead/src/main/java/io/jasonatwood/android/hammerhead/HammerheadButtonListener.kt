@@ -14,7 +14,7 @@ class HammerheadButtonListener {
         CONFIRM,
     }
 
-    private val deviceType = getHammerheadDeviceType()
+    private val deviceType = hammerheadDeviceType()
 
     /**
      * Pass all [android.app.Activity.onKeyDown] events to this method.
